@@ -16,9 +16,7 @@
 		667861BF223F8E9800AFB464 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861BE223F8E9800AFB464 /* main.m */; };
 		667861CA223F8E9800AFB464 /* HDChainMakerMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861C9223F8E9800AFB464 /* HDChainMakerMacTests.m */; };
 		667861D5223F8E9800AFB464 /* HDChainMakerMacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861D4223F8E9800AFB464 /* HDChainMakerMacUITests.m */; };
-		667861E4223FD56800AFB464 /* NSView+HDChainMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861E3223FD56800AFB464 /* NSView+HDChainMaker.m */; };
 		667861E7223FD8D000AFB464 /* HDChainMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861E6223FD8D000AFB464 /* HDChainMaker.m */; };
-		667861ED2243305500AFB464 /* HDChainMaker+test55.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861EC2243305500AFB464 /* HDChainMaker+test55.m */; };
 		EFED533AB2B8FBDEF694A21B /* libPods-HDChainMakerMacUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 886862B0CDA1A44B90269F04 /* libPods-HDChainMakerMacUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -62,12 +60,8 @@
 		667861D0223F8E9800AFB464 /* HDChainMakerMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDChainMakerMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		667861D4223F8E9800AFB464 /* HDChainMakerMacUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDChainMakerMacUITests.m; sourceTree = "<group>"; };
 		667861D6223F8E9800AFB464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		667861E2223FD56800AFB464 /* NSView+HDChainMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView+HDChainMaker.h"; sourceTree = "<group>"; };
-		667861E3223FD56800AFB464 /* NSView+HDChainMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSView+HDChainMaker.m"; sourceTree = "<group>"; };
 		667861E5223FD8D000AFB464 /* HDChainMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDChainMaker.h; sourceTree = "<group>"; };
 		667861E6223FD8D000AFB464 /* HDChainMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDChainMaker.m; sourceTree = "<group>"; };
-		667861EB2243305500AFB464 /* HDChainMaker+test55.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDChainMaker+test55.h"; sourceTree = "<group>"; };
-		667861EC2243305500AFB464 /* HDChainMaker+test55.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HDChainMaker+test55.m"; sourceTree = "<group>"; };
 		7BE07B28F59D7903A4421ACC /* libPods-HDChainMakerMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HDChainMakerMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		886862B0CDA1A44B90269F04 /* libPods-HDChainMakerMacUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HDChainMakerMacUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B399C9BEBB178E4B82D85D /* Pods-HDChainMakerMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDChainMakerMacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDChainMakerMacUITests/Pods-HDChainMakerMacUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,10 +139,6 @@
 				667861B6223F8E9700AFB464 /* ViewController.m */,
 				667861E5223FD8D000AFB464 /* HDChainMaker.h */,
 				667861E6223FD8D000AFB464 /* HDChainMaker.m */,
-				667861E2223FD56800AFB464 /* NSView+HDChainMaker.h */,
-				667861E3223FD56800AFB464 /* NSView+HDChainMaker.m */,
-				667861EB2243305500AFB464 /* HDChainMaker+test55.h */,
-				667861EC2243305500AFB464 /* HDChainMaker+test55.m */,
 				667861B8223F8E9800AFB464 /* Assets.xcassets */,
 				667861BA223F8E9800AFB464 /* Main.storyboard */,
 				667861BD223F8E9800AFB464 /* Info.plist */,
@@ -392,11 +382,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				667861ED2243305500AFB464 /* HDChainMaker+test55.m in Sources */,
 				667861B7223F8E9700AFB464 /* ViewController.m in Sources */,
 				667861BF223F8E9800AFB464 /* main.m in Sources */,
 				667861E7223FD8D000AFB464 /* HDChainMaker.m in Sources */,
-				667861E4223FD56800AFB464 /* NSView+HDChainMaker.m in Sources */,
 				667861B4223F8E9700AFB464 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
