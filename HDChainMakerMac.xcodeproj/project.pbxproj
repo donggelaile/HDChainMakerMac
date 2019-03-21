@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31EAE65F19BE6E4905662E93 /* libPods-HDChainMakerMacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0F2746945F6671700F42B2 /* libPods-HDChainMakerMacTests.a */; };
+		5D788B4B81EC395B4EBF52E1 /* libPods-HDChainMakerMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE07B28F59D7903A4421ACC /* libPods-HDChainMakerMac.a */; };
+		667861B4223F8E9700AFB464 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861B3223F8E9700AFB464 /* AppDelegate.m */; };
+		667861B7223F8E9700AFB464 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861B6223F8E9700AFB464 /* ViewController.m */; };
+		667861B9223F8E9800AFB464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667861B8223F8E9800AFB464 /* Assets.xcassets */; };
+		667861BC223F8E9800AFB464 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667861BA223F8E9800AFB464 /* Main.storyboard */; };
+		667861BF223F8E9800AFB464 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861BE223F8E9800AFB464 /* main.m */; };
+		667861CA223F8E9800AFB464 /* HDChainMakerMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861C9223F8E9800AFB464 /* HDChainMakerMacTests.m */; };
+		667861D5223F8E9800AFB464 /* HDChainMakerMacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861D4223F8E9800AFB464 /* HDChainMakerMacUITests.m */; };
+		667861E4223FD56800AFB464 /* NSView+HDChainMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861E3223FD56800AFB464 /* NSView+HDChainMaker.m */; };
+		667861E7223FD8D000AFB464 /* HDChainMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861E6223FD8D000AFB464 /* HDChainMaker.m */; };
+		667861ED2243305500AFB464 /* HDChainMaker+test55.m in Sources */ = {isa = PBXBuildFile; fileRef = 667861EC2243305500AFB464 /* HDChainMaker+test55.m */; };
+		EFED533AB2B8FBDEF694A21B /* libPods-HDChainMakerMacUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 886862B0CDA1A44B90269F04 /* libPods-HDChainMakerMacUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		667861C6223F8E9800AFB464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667861A7223F8E9700AFB464 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 667861AE223F8E9700AFB464;
+			remoteInfo = HDChainMakerMac;
+		};
+		667861D1223F8E9800AFB464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667861A7223F8E9700AFB464 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 667861AE223F8E9700AFB464;
+			remoteInfo = HDChainMakerMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09EDC6EB47A123AD35FC0337 /* Pods-HDChainMakerMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDChainMakerMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDChainMakerMac/Pods-HDChainMakerMac.debug.xcconfig"; sourceTree = "<group>"; };
+		28F346F4962E28529E990829 /* Pods-HDChainMakerMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDChainMakerMacUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDChainMakerMacUITests/Pods-HDChainMakerMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		491ADF7B246B011F8B7D698D /* Pods-HDChainMakerMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDChainMakerMacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDChainMakerMacTests/Pods-HDChainMakerMacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59F42D591F1C45C7371CCA51 /* Pods-HDChainMakerMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDChainMakerMacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDChainMakerMacTests/Pods-HDChainMakerMacTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A0F2746945F6671700F42B2 /* libPods-HDChainMakerMacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HDChainMakerMacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60641035FBC641A76621AF8A /* Pods-HDChainMakerMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDChainMakerMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDChainMakerMac/Pods-HDChainMakerMac.release.xcconfig"; sourceTree = "<group>"; };
+		667861AF223F8E9700AFB464 /* HDChainMakerMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDChainMakerMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		667861B2223F8E9700AFB464 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		667861B3223F8E9700AFB464 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		667861B5223F8E9700AFB464 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		667861B6223F8E9700AFB464 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		667861B8223F8E9800AFB464 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		667861BB223F8E9800AFB464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		667861BD223F8E9800AFB464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667861BE223F8E9800AFB464 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		667861C0223F8E9800AFB464 /* HDChainMakerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HDChainMakerMac.entitlements; sourceTree = "<group>"; };
+		667861C5223F8E9800AFB464 /* HDChainMakerMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDChainMakerMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		667861C9223F8E9800AFB464 /* HDChainMakerMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDChainMakerMacTests.m; sourceTree = "<group>"; };
+		667861CB223F8E9800AFB464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667861D0223F8E9800AFB464 /* HDChainMakerMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDChainMakerMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		667861D4223F8E9800AFB464 /* HDChainMakerMacUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDChainMakerMacUITests.m; sourceTree = "<group>"; };
+		667861D6223F8E9800AFB464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667861E2223FD56800AFB464 /* NSView+HDChainMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView+HDChainMaker.h"; sourceTree = "<group>"; };
+		667861E3223FD56800AFB464 /* NSView+HDChainMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSView+HDChainMaker.m"; sourceTree = "<group>"; };
+		667861E5223FD8D000AFB464 /* HDChainMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDChainMaker.h; sourceTree = "<group>"; };
+		667861E6223FD8D000AFB464 /* HDChainMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDChainMaker.m; sourceTree = "<group>"; };
+		667861EB2243305500AFB464 /* HDChainMaker+test55.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDChainMaker+test55.h"; sourceTree = "<group>"; };
+		667861EC2243305500AFB464 /* HDChainMaker+test55.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HDChainMaker+test55.m"; sourceTree = "<group>"; };
+		7BE07B28F59D7903A4421ACC /* libPods-HDChainMakerMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HDChainMakerMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		886862B0CDA1A44B90269F04 /* libPods-HDChainMakerMacUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HDChainMakerMacUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B399C9BEBB178E4B82D85D /* Pods-HDChainMakerMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDChainMakerMacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDChainMakerMacUITests/Pods-HDChainMakerMacUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		667861AC223F8E9700AFB464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D788B4B81EC395B4EBF52E1 /* libPods-HDChainMakerMac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667861C2223F8E9800AFB464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31EAE65F19BE6E4905662E93 /* libPods-HDChainMakerMacTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667861CD223F8E9800AFB464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFED533AB2B8FBDEF694A21B /* libPods-HDChainMakerMacUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02919A0C37113CE1F7E20010 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09EDC6EB47A123AD35FC0337 /* Pods-HDChainMakerMac.debug.xcconfig */,
+				60641035FBC641A76621AF8A /* Pods-HDChainMakerMac.release.xcconfig */,
+				491ADF7B246B011F8B7D698D /* Pods-HDChainMakerMacTests.debug.xcconfig */,
+				59F42D591F1C45C7371CCA51 /* Pods-HDChainMakerMacTests.release.xcconfig */,
+				28F346F4962E28529E990829 /* Pods-HDChainMakerMacUITests.debug.xcconfig */,
+				D7B399C9BEBB178E4B82D85D /* Pods-HDChainMakerMacUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		667861A6223F8E9700AFB464 = {
+			isa = PBXGroup;
+			children = (
+				667861B1223F8E9700AFB464 /* HDChainMakerMac */,
+				667861C8223F8E9800AFB464 /* HDChainMakerMacTests */,
+				667861D3223F8E9800AFB464 /* HDChainMakerMacUITests */,
+				667861B0223F8E9700AFB464 /* Products */,
+				02919A0C37113CE1F7E20010 /* Pods */,
+				E378F6F270F5D8EC371A2E00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		667861B0223F8E9700AFB464 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				667861AF223F8E9700AFB464 /* HDChainMakerMac.app */,
+				667861C5223F8E9800AFB464 /* HDChainMakerMacTests.xctest */,
+				667861D0223F8E9800AFB464 /* HDChainMakerMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		667861B1223F8E9700AFB464 /* HDChainMakerMac */ = {
+			isa = PBXGroup;
+			children = (
+				667861B2223F8E9700AFB464 /* AppDelegate.h */,
+				667861B3223F8E9700AFB464 /* AppDelegate.m */,
+				667861B5223F8E9700AFB464 /* ViewController.h */,
+				667861B6223F8E9700AFB464 /* ViewController.m */,
+				667861E5223FD8D000AFB464 /* HDChainMaker.h */,
+				667861E6223FD8D000AFB464 /* HDChainMaker.m */,
+				667861E2223FD56800AFB464 /* NSView+HDChainMaker.h */,
+				667861E3223FD56800AFB464 /* NSView+HDChainMaker.m */,
+				667861EB2243305500AFB464 /* HDChainMaker+test55.h */,
+				667861EC2243305500AFB464 /* HDChainMaker+test55.m */,
+				667861B8223F8E9800AFB464 /* Assets.xcassets */,
+				667861BA223F8E9800AFB464 /* Main.storyboard */,
+				667861BD223F8E9800AFB464 /* Info.plist */,
+				667861BE223F8E9800AFB464 /* main.m */,
+				667861C0223F8E9800AFB464 /* HDChainMakerMac.entitlements */,
+			);
+			path = HDChainMakerMac;
+			sourceTree = "<group>";
+		};
+		667861C8223F8E9800AFB464 /* HDChainMakerMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				667861C9223F8E9800AFB464 /* HDChainMakerMacTests.m */,
+				667861CB223F8E9800AFB464 /* Info.plist */,
+			);
+			path = HDChainMakerMacTests;
+			sourceTree = "<group>";
+		};
+		667861D3223F8E9800AFB464 /* HDChainMakerMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				667861D4223F8E9800AFB464 /* HDChainMakerMacUITests.m */,
+				667861D6223F8E9800AFB464 /* Info.plist */,
+			);
+			path = HDChainMakerMacUITests;
+			sourceTree = "<group>";
+		};
+		E378F6F270F5D8EC371A2E00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BE07B28F59D7903A4421ACC /* libPods-HDChainMakerMac.a */,
+				5A0F2746945F6671700F42B2 /* libPods-HDChainMakerMacTests.a */,
+				886862B0CDA1A44B90269F04 /* libPods-HDChainMakerMacUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		667861AE223F8E9700AFB464 /* HDChainMakerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667861D9223F8E9800AFB464 /* Build configuration list for PBXNativeTarget "HDChainMakerMac" */;
+			buildPhases = (
+				F292FBF2AD8C5E65099A85B1 /* [CP] Check Pods Manifest.lock */,
+				667861AB223F8E9700AFB464 /* Sources */,
+				667861AC223F8E9700AFB464 /* Frameworks */,
+				667861AD223F8E9700AFB464 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HDChainMakerMac;
+			productName = HDChainMakerMac;
+			productReference = 667861AF223F8E9700AFB464 /* HDChainMakerMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		667861C4223F8E9800AFB464 /* HDChainMakerMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667861DC223F8E9800AFB464 /* Build configuration list for PBXNativeTarget "HDChainMakerMacTests" */;
+			buildPhases = (
+				C6C74EE15EA538D7D725C646 /* [CP] Check Pods Manifest.lock */,
+				667861C1223F8E9800AFB464 /* Sources */,
+				667861C2223F8E9800AFB464 /* Frameworks */,
+				667861C3223F8E9800AFB464 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				667861C7223F8E9800AFB464 /* PBXTargetDependency */,
+			);
+			name = HDChainMakerMacTests;
+			productName = HDChainMakerMacTests;
+			productReference = 667861C5223F8E9800AFB464 /* HDChainMakerMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		667861CF223F8E9800AFB464 /* HDChainMakerMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667861DF223F8E9800AFB464 /* Build configuration list for PBXNativeTarget "HDChainMakerMacUITests" */;
+			buildPhases = (
+				0160F09CDABDCFED848380C0 /* [CP] Check Pods Manifest.lock */,
+				667861CC223F8E9800AFB464 /* Sources */,
+				667861CD223F8E9800AFB464 /* Frameworks */,
+				667861CE223F8E9800AFB464 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				667861D2223F8E9800AFB464 /* PBXTargetDependency */,
+			);
+			name = HDChainMakerMacUITests;
+			productName = HDChainMakerMacUITests;
+			productReference = 667861D0223F8E9800AFB464 /* HDChainMakerMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		667861A7223F8E9700AFB464 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = CHD;
+				TargetAttributes = {
+					667861AE223F8E9700AFB464 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					667861C4223F8E9800AFB464 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 667861AE223F8E9700AFB464;
+					};
+					667861CF223F8E9800AFB464 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 667861AE223F8E9700AFB464;
+					};
+				};
+			};
+			buildConfigurationList = 667861AA223F8E9700AFB464 /* Build configuration list for PBXProject "HDChainMakerMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 667861A6223F8E9700AFB464;
+			productRefGroup = 667861B0223F8E9700AFB464 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				667861AE223F8E9700AFB464 /* HDChainMakerMac */,
+				667861C4223F8E9800AFB464 /* HDChainMakerMacTests */,
+				667861CF223F8E9800AFB464 /* HDChainMakerMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		667861AD223F8E9700AFB464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667861B9223F8E9800AFB464 /* Assets.xcassets in Resources */,
+				667861BC223F8E9800AFB464 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667861C3223F8E9800AFB464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667861CE223F8E9800AFB464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0160F09CDABDCFED848380C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HDChainMakerMacUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C74EE15EA538D7D725C646 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HDChainMakerMacTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F292FBF2AD8C5E65099A85B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HDChainMakerMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		667861AB223F8E9700AFB464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667861ED2243305500AFB464 /* HDChainMaker+test55.m in Sources */,
+				667861B7223F8E9700AFB464 /* ViewController.m in Sources */,
+				667861BF223F8E9800AFB464 /* main.m in Sources */,
+				667861E7223FD8D000AFB464 /* HDChainMaker.m in Sources */,
+				667861E4223FD56800AFB464 /* NSView+HDChainMaker.m in Sources */,
+				667861B4223F8E9700AFB464 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667861C1223F8E9800AFB464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667861CA223F8E9800AFB464 /* HDChainMakerMacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667861CC223F8E9800AFB464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667861D5223F8E9800AFB464 /* HDChainMakerMacUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		667861C7223F8E9800AFB464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 667861AE223F8E9700AFB464 /* HDChainMakerMac */;
+			targetProxy = 667861C6223F8E9800AFB464 /* PBXContainerItemProxy */;
+		};
+		667861D2223F8E9800AFB464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 667861AE223F8E9700AFB464 /* HDChainMakerMac */;
+			targetProxy = 667861D1223F8E9800AFB464 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		667861BA223F8E9800AFB464 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				667861BB223F8E9800AFB464 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		667861D7223F8E9800AFB464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		667861D8223F8E9800AFB464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		667861DA223F8E9800AFB464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09EDC6EB47A123AD35FC0337 /* Pods-HDChainMakerMac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HDChainMakerMac/HDChainMakerMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HDChainMakerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = chd.HDChainMakerMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		667861DB223F8E9800AFB464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60641035FBC641A76621AF8A /* Pods-HDChainMakerMac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HDChainMakerMac/HDChainMakerMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HDChainMakerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = chd.HDChainMakerMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		667861DD223F8E9800AFB464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 491ADF7B246B011F8B7D698D /* Pods-HDChainMakerMacTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HDChainMakerMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chd.HDChainMakerMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HDChainMakerMac.app/Contents/MacOS/HDChainMakerMac";
+			};
+			name = Debug;
+		};
+		667861DE223F8E9800AFB464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59F42D591F1C45C7371CCA51 /* Pods-HDChainMakerMacTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HDChainMakerMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chd.HDChainMakerMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HDChainMakerMac.app/Contents/MacOS/HDChainMakerMac";
+			};
+			name = Release;
+		};
+		667861E0223F8E9800AFB464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28F346F4962E28529E990829 /* Pods-HDChainMakerMacUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HDChainMakerMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chd.HDChainMakerMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HDChainMakerMac;
+			};
+			name = Debug;
+		};
+		667861E1223F8E9800AFB464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B399C9BEBB178E4B82D85D /* Pods-HDChainMakerMacUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HDChainMakerMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chd.HDChainMakerMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HDChainMakerMac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		667861AA223F8E9700AFB464 /* Build configuration list for PBXProject "HDChainMakerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667861D7223F8E9800AFB464 /* Debug */,
+				667861D8223F8E9800AFB464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667861D9223F8E9800AFB464 /* Build configuration list for PBXNativeTarget "HDChainMakerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667861DA223F8E9800AFB464 /* Debug */,
+				667861DB223F8E9800AFB464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667861DC223F8E9800AFB464 /* Build configuration list for PBXNativeTarget "HDChainMakerMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667861DD223F8E9800AFB464 /* Debug */,
+				667861DE223F8E9800AFB464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667861DF223F8E9800AFB464 /* Build configuration list for PBXNativeTarget "HDChainMakerMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667861E0223F8E9800AFB464 /* Debug */,
+				667861E1223F8E9800AFB464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 667861A7223F8E9700AFB464 /* Project object */;
+}
