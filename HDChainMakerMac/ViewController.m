@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import <Masonry.h>
 #import "HDChainMaker.h"
-#import "NSView+HDChainMaker.h"
 @implementation ViewController
 
 - (void)viewDidLoad {
