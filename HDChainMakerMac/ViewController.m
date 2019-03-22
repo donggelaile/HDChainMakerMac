@@ -14,37 +14,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self setUI];
     // Do any additional setup after loading the view.
 }
-- (void)setUI
-{
-//    self.mainTextView.pla
-    
-    //backView
-    NSScrollView *scrolleView = [[NSScrollView alloc]init];
 
-    [self.view addSubview:scrolleView];
-    
-    
-    //textView
-    NSTextView *txView = [[NSTextView alloc]init];
-    txView.string = @"默认";
-    txView.delegate = self;
-    [scrolleView setDocumentView:txView];
-    
-    
-    
-    //Layout
-    [scrolleView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(NSEdgeInsetsZero);
-    }];
-    
-    [txView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(NSEdgeInsetsZero);
-    }];
-
-}
 
 - (IBAction)beginClick:(id)sender {
     if ([[NSFileManager defaultManager] fileExistsAtPath:self.innerTextView.string]) {
