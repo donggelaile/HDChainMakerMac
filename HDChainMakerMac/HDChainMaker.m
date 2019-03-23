@@ -7,8 +7,9 @@
 //
 
 #import "HDChainMaker.h"
+#import <objc/runtime.h>
 #import <AppKit/NSOpenPanel.h>
-
+static BOOL isOpenReadonlyProperty = NO;
 #define HDClassRegex @"@interface[\\S\\s]*?@end"//匹配一个类
 #define HDClassNameRegex @"(?<=@interface[\\s+])([\\w]+?)(?=\\s*:)"//匹配类名
 #define HDMethodsOfInitRegex @"((-|\\+)\\s*\\(\\s*(instancetype|%@\\s*\\*)\\s*\\))\\s*([\\s\\S])+?;"//匹配所有初始化方法
@@ -338,7 +339,7 @@
     //添加属性
     NSString *proPre = [NSString stringWithFormat:@"@property (nonatomic, strong, readonly) %@* ",self.helperClassName];
     [_props enumerateObjectsUsingBlock:^(HDProperty * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (obj.name && obj.type && !obj.isReadonly) {
+        if (obj.name && obj.type && (isOpenReadonlyProperty || !obj.isReadonly)) {
             NSString *hd_proper_name = [@"hd_" stringByAppendingString:obj.name];
             NSString *oneProperty = [NSString stringWithFormat:@"%@ (^%@)(%@ %@);\n",proPre,hd_proper_name,obj.type,obj.name];
             [self->_finalHfileStr appendString:oneProperty];
@@ -374,7 +375,7 @@
     [_finalMfileStr appendFormat:@"@interface %@()\n",self.helperClassName];
     NSString *proPre = @"@property (nonatomic) ";
     [_props enumerateObjectsUsingBlock:^(HDProperty * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (obj.name && obj.type && !obj.isReadonly) {
+        if (obj.name && obj.type && (isOpenReadonlyProperty || !obj.isReadonly)) {
             NSString *oneProperty = [NSString stringWithFormat:@"%@ %@ %@;\n",proPre,obj.type,obj.name];
             [self->_finalMfileStr appendString:oneProperty];
         }
@@ -393,8 +394,19 @@
     [_finalMfileStr appendFormat:@"- (%@ *)generateObj\n{\n",_clsName];
     [_finalMfileStr appendFormat:@"\t %@ *obj = [%@ new];\n",_clsName,_clsName];
     [_props enumerateObjectsUsingBlock:^(HDProperty * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (obj.name && obj.type && !obj.isReadonly) {
-            [self->_finalMfileStr appendFormat:@"\t if (self.keysSetedMap[@\"%@\"]) obj.%@ = self.%@;\n",obj.name,obj.name,obj.name];
+        if (obj.name && obj.type && (isOpenReadonlyProperty || !obj.isReadonly)) {
+            NSString *setImp = [NSString stringWithFormat:@"obj.%@ = self.%@",obj.name,obj.name];
+            if (obj.isReadonly) {
+                //isKindOfClass 判断的是 参数1 -> isa 或 isa -> superclass(直至nil) 是否是 参数2
+                //所以判断类对象是否是某个类时 后面传的是元类对象
+                NSString *realType = [HDRegexHelper regexFirstMatchWithPattern:@"\\s*\\w+" needRegexStr:obj.type];
+                BOOL isObjcClass = [NSClassFromString(realType) isKindOfClass:object_getClass([NSObject class])];
+                //非OC对象封装为NSNumber 才能kvc赋值(自定义结构体可能不支持)
+                NSString *setedValue = isObjcClass?[NSString stringWithFormat:@"self.%@",obj.name]:[NSString stringWithFormat:@"@(self.%@)",obj.name];
+                setImp = [NSString stringWithFormat:@"[self setValue:%@ forKeyPath:@\"%@\"]",setedValue,obj.name];
+            }
+            
+            [self->_finalMfileStr appendFormat:@"\t if (self.keysSetedMap[@\"%@\"]) %@;\n",obj.name,setImp];
         }
     }];
     [_finalMfileStr appendString:@"\t return obj;\n}\n"];
@@ -402,10 +414,11 @@
     
     //每个propers的block函数
     [_props enumerateObjectsUsingBlock:^(HDProperty * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (obj.name && obj.type && !obj.isReadonly) {
+        if (obj.name && obj.type && (isOpenReadonlyProperty || !obj.isReadonly)) {
             NSMutableString *temp = self->_finalMfileStr;
+            NSString *setImp = [NSString stringWithFormat:@"self.%@ = %@",obj.name,obj.name];;
             [temp appendFormat:@"-(%@* (^)(%@))hd_%@\n{\n",self.helperClassName,obj.type,obj.name];
-            [temp appendFormat:@"\t return ^(%@ %@){\n\t\t self.%@ = %@;\n\t\t self.keysSetedMap[@\"%@\"] = @(YES);\n\t\t return self;\n\t};\n}\n",obj.type,obj.name,obj.name,obj.name,obj.name];
+            [temp appendFormat:@"\t return ^(%@ %@){\n\t\t %@;\n\t\t self.keysSetedMap[@\"%@\"] = @(YES);\n\t\t return self;\n\t};\n}\n",obj.type,obj.name,setImp,obj.name];
         }
     }];
     [_finalMfileStr appendString:@"@end\n\n"];
@@ -432,12 +445,12 @@
 
 @implementation HDChainMaker
 
-+ (void)parseObjc_hFile:(NSString*)h_file
++ (void)parseObjcHFile:(NSString*)h_file isOpenReadonlyPro:(BOOL)isOpenRNPro
 {
     if (!h_file) {
         return;
     }
-    
+    isOpenReadonlyProperty = isOpenRNPro;
     //解析出一个类
     [HDRegexHelper regexWithPattern:HDClassRegex needRegexStr:h_file matches:^(NSString *machStr, NSTextCheckingResult * _Nullable hd_result, BOOL * _Nonnull hd_stop) {
         [self _generateHDChainHelpByClassParseStr:machStr];

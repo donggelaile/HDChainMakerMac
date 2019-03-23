@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HDChainMaker : NSObject
-+ (void)parseObjc_hFile:(NSString*)h_file;
++ (void)parseObjcHFile:(NSString*)h_file isOpenReadonlyPro:(BOOL)isOpenRNPro;
 @end
 
 NS_ASSUME_NONNULL_END

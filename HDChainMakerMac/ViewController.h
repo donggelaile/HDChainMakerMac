@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
 @interface ViewController : NSViewController<NSTextViewDelegate>
 @property (unsafe_unretained) IBOutlet NSTextView *innerTextView;
 

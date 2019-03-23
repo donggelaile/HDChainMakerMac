@@ -745,14 +745,27 @@
                                     <action selector="beginClick:" target="XfG-lQ-9wD" id="8H6-sm-Zm7"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rkb-BK-VXz">
+                                <rect key="frame" x="4" y="230" width="154" height="28"/>
+                                <buttonCell key="cell" type="check" title="开启readonly属性赋值" bezelStyle="regularSquare" imagePosition="left" inset="2" id="v6k-wR-yFZ">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkBoxClick:" target="XfG-lQ-9wD" id="sbW-z2-4Xn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xhm-rf-QwT" secondAttribute="trailing" id="6pa-XL-1Ns"/>
                             <constraint firstItem="xhm-rf-QwT" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="50" id="7Lb-vG-lgc"/>
                             <constraint firstItem="xhm-rf-QwT" firstAttribute="top" secondItem="Qar-sB-dnQ" secondAttribute="bottom" id="F4o-RY-QIf"/>
+                            <constraint firstItem="xhm-rf-QwT" firstAttribute="top" secondItem="Rkb-BK-VXz" secondAttribute="bottom" constant="12" id="H4O-72-NEB"/>
                             <constraint firstAttribute="bottom" secondItem="xhm-rf-QwT" secondAttribute="bottom" id="IMe-5p-nIh"/>
                             <constraint firstItem="Qar-sB-dnQ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="O5W-3Q-2x3"/>
                             <constraint firstAttribute="trailing" secondItem="Qar-sB-dnQ" secondAttribute="trailing" constant="165" id="S2q-sm-1vh"/>
+                            <constraint firstItem="Rkb-BK-VXz" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="14" id="X0L-SY-W1P"/>
+                            <constraint firstItem="Rkb-BK-VXz" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="6" id="cDH-Lm-Bk6"/>
                             <constraint firstItem="xhm-rf-QwT" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="tEn-uM-zdD"/>
                             <constraint firstItem="Qar-sB-dnQ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="165" id="yLV-hX-9VZ"/>
                         </constraints>
@@ -763,7 +776,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="74" y="729"/>
         </scene>
     </scenes>
 </document>

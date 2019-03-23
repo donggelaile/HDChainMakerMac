@@ -9,12 +9,19 @@
 #import "ViewController.h"
 #import <Masonry.h>
 #import "HDChainMaker.h"
-@implementation ViewController
 
+@implementation ViewController
+{
+    BOOL isOpenReadOnlyPropertyWrite; //是否开启使用kvc对readonly属性初始化
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
+}
+- (IBAction)checkBoxClick:(NSButton*)sender {
+//    checkbox
+    isOpenReadOnlyPropertyWrite = sender.state;
 }
 
 
@@ -42,7 +49,7 @@
     if (!file || file.length == 0) {
         [self makeToast:@"内容不能为空"];
     }else{
-        [HDChainMaker parseObjc_hFile:file];
+        [HDChainMaker parseObjcHFile:file isOpenReadonlyPro:isOpenReadOnlyPropertyWrite];
     }
 }
 
