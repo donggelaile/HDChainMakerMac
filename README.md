@@ -26,7 +26,12 @@ HDChainMakerMac是一个跑在Mac上的程序，它是一个可以快速的对�
 
 @end
 ```
-其中frame，backgroundColor属性是从父类中抽取出来的，这个可以根据你个人的需要来添加或删除。另外，所有的readonly属性在生成时会被过滤掉，最终不会生成相应的链式调用。
+其中frame，backgroundColor属性是从父类中抽取出来的，这个可以根据你个人的需要来添加或删除。
+#### 对于readonly属性
+1、提供一个是否生成readonly属性链式构造的选择框，默认为NO
+2、对于系统的类不建议开启readonly的支持，因为对系统类的readonly属性赋值可能出现未知结果
+3、可能自己原本的类有几个readonly属性，然后提供了一个初始化方法向外暴露接口来构造对象。这种情况你可能需要开启对readonly属性的支持，此时内部会使用kvc对原对象的readonly属性赋值(需要确保原类 +(BOOL)accessInstanceVariablesDirectly 返回的是YES，未实现默认YES)
+
 ### 下面是具体的生成过程演示：
 ![](https://github.com/donggelaile/HDChainMakerMac/blob/master/ScreenShot/generateDemo.gif?raw=true)
 ### 以及如何使用生成的类别:
