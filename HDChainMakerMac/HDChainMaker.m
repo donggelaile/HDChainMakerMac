@@ -403,7 +403,7 @@ static BOOL isOpenReadonlyProperty = NO;
                 BOOL isObjcClass = [NSClassFromString(realType) isKindOfClass:object_getClass([NSObject class])];
                 //非OC对象封装为NSNumber 才能kvc赋值(自定义结构体可能不支持)
                 NSString *setedValue = isObjcClass?[NSString stringWithFormat:@"self.%@",obj.name]:[NSString stringWithFormat:@"@(self.%@)",obj.name];
-                setImp = [NSString stringWithFormat:@"[self setValue:%@ forKeyPath:@\"%@\"]",setedValue,obj.name];
+                setImp = [NSString stringWithFormat:@"[obj setValue:%@ forKeyPath:@\"%@\"]",setedValue,obj.name];
             }
             
             [self->_finalMfileStr appendFormat:@"\t if (self.keysSetedMap[@\"%@\"]) %@;\n",obj.name,setImp];
